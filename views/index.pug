@@ -1,0 +1,13 @@
+html
+  head
+    title= title
+    link(rel='stylesheet', href='style.css', type='text/css')
+
+  body
+    h1= "Kolla vädret"
+    h2= temp + city
+         form#form1(action="/" method="post") 
+            input#cityname(type="text", name="cityname",value='', placeholder="Stad")
+            br
+            input#check(type="submit", value="Kolla vädret")
+
